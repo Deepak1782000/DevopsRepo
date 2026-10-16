@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="DevOps Center Demo" icon-name="custom:custom63">
+        <div class="slds-p-around_medium">
+            <template lwc:if={summary.data}>
+                <p class="slds-text-heading_small">{summary.data.title}</p>
+                <p class="slds-m-top_x-small">{summary.data.status}</p>
+                <p class="slds-m-top_small">Sample calculation: {calculation.data}</p>
+            </template>
+
+            <template lwc:elseif={summary.error}>
+                <p class="slds-text-color_error">Unable to load demo data.</p>
+            </template>
+
+            <template lwc:else>
+                <lightning-spinner alternative-text="Loading demo data"></lightning-spinner>
+            </template>
+        </div>
+    </lightning-card>
+</template>
