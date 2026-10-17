@@ -19,4 +19,7 @@ public with sharing class DevOpsCentreDemoController {
     public static void mymethod1(){
         System.debug('Second Change');
     }
+    public static void mymethod2(){
+        System.debug('Third Change');
+    }
 }
