@@ -22,4 +22,7 @@ public with sharing class DevOpsCentreDemoController {
     public static void mymethod2(){
         System.debug('Third Change');
     }
+    public static void mymethod3(){
+        System.debug('Fourth Change');
+    }
 }
